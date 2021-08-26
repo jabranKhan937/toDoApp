@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  box-sizing: border-box;
+}
+.mainDiv {
+  width: 100%;
+  height: 100vh;
+  background: rgb(37, 170, 223);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.toDoCard {
+  width: 25%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 5px 5px 25px -5px black;
+  border-radius: 15px;
+}
+h1 {
+  color: white;
+  background: transparent;
+  background-color: purple;
+  padding: 6px 0 2px 0;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5 black;
+}
+input {
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid purple;
+  outline: none;
+}
+button {
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50% !important;
+  border-color: transparent;
+  background-color: plum;
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px black;
+}
+button:hover {
+  background-color: green;
+}
+ol {
+  margin-top: 30px;
+}
+ol li {
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex !important;
+  align-items: center;
+  color: plum;
+  text-transform: uppercase;
+}
+.todo-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo-style .fa-times {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: plum;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px black;
+}
+.todo-style .fa-times:hover {
+  color: red;
+}
+@media (max-width: 768px) {
+  .toDoCard {
+    width: 55%;
+  }
+  .todo-style .fa-times {
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    margin-left: 5px;
+    min-height: 40px;
+    color: whitesmoke;
+    font-size: 30px;
+  }
+}
